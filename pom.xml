@@ -11,6 +11,24 @@
 			<artifactId>jedis</artifactId>
 			<version>2.0.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.19.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.19.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>2.2.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -34,6 +52,10 @@
 						<program>
 							<mainClass>com.heroku.devcenter.Main</mainClass>
 							<name>sample</name>
+						</program>
+						<program>
+							<mainClass>com.heroku.devcenter.spring.Main</mainClass>
+							<name>spring-sample</name>
 						</program>
 					</programs>
 				</configuration>
